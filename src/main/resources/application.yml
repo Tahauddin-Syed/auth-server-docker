@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: auth-server-docker
+  profiles:
+    active: sit
+  cloud:
+    config:
+      uri: http://localhost:8999
+  config:
+    import: "optional:configserver:"
